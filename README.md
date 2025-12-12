@@ -8,11 +8,11 @@ This Python project reads your webcam, detects a single hand with MediaPipe, rec
 
 
 ## Output
+<img width="1365" height="729" alt="Screenshot_1" src="https://github.com/user-attachments/assets/b531e057-5188-48b2-85e7-41543938deeb" />
+<img width="1365" height="730" alt="Screenshot_2" src="https://github.com/user-attachments/assets/bdff28dc-04ed-4618-bc02-1a203d21187f" />
+<img width="1365" height="726" alt="Screenshot_3" src="https://github.com/user-attachments/assets/4c428e89-f1e2-4377-adfd-2a9be4795e09" />
+<img width="1363" height="724" alt="Screenshot_4" src="https://github.com/user-attachments/assets/16d8195c-a463-49b9-b260-81a0433564d7" />
 
-<img width="1365" height="729" alt="Screenshot_1" src="https://github.com/user-attachments/assets/f76e5775-d50c-437e-86a3-95c98687f956" />
-<img width="1365" height="730" alt="Screenshot_2" src="https://github.com/user-attachments/assets/f7096c88-d5ea-4e6d-85e7-817ec5c927a3" />
-<img width="1365" height="726" alt="Screenshot_3" src="https://github.com/user-attachments/assets/7853efb3-c41a-413c-93f9-e72a42d2d0dc" />
-<img width="1363" height="724" alt="Screenshot_4" src="https://github.com/user-attachments/assets/7039a4da-5f70-41db-b10e-7da7ccc2b35a" />
 
 
 ## Table of Contents
@@ -33,10 +33,6 @@ This Python project reads your webcam, detects a single hand with MediaPipe, rec
 
 
 
-
-
----
-
 ## Features
 
 * Real-time hand detection and landmark drawing.
@@ -46,7 +42,7 @@ This Python project reads your webcam, detects a single hand with MediaPipe, rec
 * Debounce state to avoid repeated key taps.
 * On-screen FPS and action text.
 
----
+
 
 ## Dependencies
 
@@ -61,7 +57,7 @@ Install with pip:
 pip install opencv-python mediapipe pynput
 ```
 
----
+
 
 ## Run (step-by-step)
 
@@ -78,7 +74,7 @@ gesture_subway.py
 6. A window titled **Subway Surfers Gesture Control** will open showing the webcam feed, hand landmarks, FPS, and current action.
 7. Press `q` in the window (or focus the terminal and press Ctrl+C) to quit.
 
----
+
 
 ## How it works — step-by-step (detailed)
 
@@ -104,7 +100,7 @@ gesture_subway.py
    * Show the frame with `cv2.imshow()`.
 6. When `q` is pressed, release the webcam and close windows.
 
----
+
 
 ## Gesture ↔ Key mapping
 
@@ -113,7 +109,7 @@ gesture_subway.py
 * **Jump** — all five fingers extended (`all(extended) == True`) → tap **Up Arrow** (`Key.up`)
 * **Duck** — Hang-loose (thumb + pinky extended, others folded) → tap **Down Arrow** (`Key.down`)
 
----
+
 
 ## Important functions & variables (what each part does)
 
@@ -127,7 +123,6 @@ gesture_subway.py
 * `FINGER_TIPS` — landmark ids for finger tips.
 * `mp_drawing.draw_landmarks()` — draws the skeleton on display for debugging/visual feedback.
 
----
 
 ## Tuning & parameters you can change
 
@@ -136,7 +131,7 @@ gesture_subway.py
 * Add debounce timing: right now a gesture is considered active as a boolean; you can track timestamps and add a minimum interval between repeated key taps (e.g., 0.25s).
 * Switch to continuous hold behavior: instead of tapping keys, call `keyboard.press()` when gesture begins and `keyboard.release()` when gesture ends.
 
----
+
 
 ## Troubleshooting
 
@@ -145,7 +140,7 @@ gesture_subway.py
 * **Keys not registering in game** — some games block simulated inputs or need focus; run the game in windowed mode and focus it, or run with administrative privileges. Some games require direct input APIs and won't accept simulated `pynput` events.
 * **FPS very low** — reduce frame size or skip frames; increase `min_tracking_confidence` may reduce CPU usage in some cases.
 
----
+
 
 
 ## Future improvements (ideas)
@@ -156,6 +151,6 @@ gesture_subway.py
 * Replace simple heuristics with a small gesture classifier (ML) for more robust recognition.
 * Add key-hold behavior for continuous lateral movement when hand stays in left/right lanes.
 
----
+
 
 
