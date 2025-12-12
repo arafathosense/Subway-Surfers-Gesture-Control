@@ -14,25 +14,6 @@ This Python project reads your webcam, detects a single hand with MediaPipe, rec
 <img width="1363" height="724" alt="Screenshot_4" src="https://github.com/user-attachments/assets/16d8195c-a463-49b9-b260-81a0433564d7" />
 
 
-
-## Table of Contents
-
-* Overview
-* Features
-* Dependencies
-* Installation
-* Run (step-by-step)
-* How it works — step-by-step (detailed)
-* Gesture ↔ Key mapping
-* Important functions (what each part does)
-* Tuning & parameters you can change
-* Troubleshooting
-* Safety notes
-* Future improvements
-* License
-
-
-
 ## Features
 
 * Real-time hand detection and landmark drawing.
