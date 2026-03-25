@@ -1,8 +1,5 @@
 # Subway Surfers Gesture Control
 
-
-## Overview
-
 This Python project reads your webcam, detects a single hand with MediaPipe, recognizes simple gestures (left/right by horizontal hand position, open palm for jump, hang-loose for duck), and simulates arrow-key presses using pynput. Use it to control games that accept keyboard arrow keys. This script captures video frames from your webcam, processes them with MediaPipe Hands to get 21 hand landmarks, determines which fingers are extended and the horizontal position of the hand, then maps gestures to keyboard arrow key presses. The program displays FPS and the currently detected action in a window.
 
 
@@ -122,8 +119,6 @@ gesture_subway.py
 * **FPS very low** — reduce frame size or skip frames; increase `min_tracking_confidence` may reduce CPU usage in some cases.
 
 
-
-
 ## Future improvements (ideas)
 
 * Add a small GUI to tune bounds, thresholds, and debounce timing.
@@ -133,5 +128,14 @@ gesture_subway.py
 * Add key-hold behavior for continuous lateral movement when hand stays in left/right lanes.
 
 
+## 👤 Author
+
+**HOSEN ARAFAT**  
+
+**Bachelor of Software Engineering, China**  
+
+**GitHub:** https://github.com/arafathosense
+
+**Research Interest: Image Computing and Perceptual Intelligence**
 
 
